@@ -188,6 +188,9 @@ main {
 }
 .sub-description {
     padding: 3%;
+}       
+.frame-material img {
+    border-radius: 50%;
 }
 
 #container_special .special{
@@ -229,7 +232,7 @@ main {
 	nav li a{
 		padding: 0.1em 0.75em;
 	}
-	
+	 
 	/* Tablet Viewport: Style rules for main content area */
 	main ul{
 		margin: 0 0 4% 10%;
@@ -249,16 +252,25 @@ main {
 
 	#about_company dd {
 		padding: 0.5% 1% 2% 0;
-	}
-	
+	}   
+    #grid-material {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px;
+        vertical-align: middle;
+        text-align: center;
+        align-items: center;
+    } 	
 	.tel-num{
 		font-size: 1.25em;
-	}
-	
+	}	
 	.map{
 		width: 600px;
 		height: 450px;
-	}
+	}       
+    .frame-material img {
+        border-radius: 50%;
+    }
 }
 
 /* Media Query for Desktop Viewport */
@@ -312,7 +324,10 @@ main {
 	
 	#about_company{
 		clear: left;
-	}
+	}           
+    .frame-material img:hover {
+        transform: scale(1.2);
+    }
 }
 
 /* Media Query for Large Desktop Viewport */
