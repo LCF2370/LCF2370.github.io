@@ -5,7 +5,7 @@
 <head>
 	<title>Store-Me-Up</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/contact.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,9 +46,222 @@
 				
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5837.607281695835!2d-82.3524458!3d42.9824098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8825837253bdc0f7%3A0xd24ea2bd39ddcec1!2sLambton%20Mall!5e0!3m2!1sen!2sca!4v1697739825721!5m2!1sen!2sca" width="600" height="450" class="map"></iframe>
 			</div>
+            <br>
+            <div id="form">
+                <h2>Inquiries</h2>
+                <h4>To ensure we can assist you effectively, kindly fill out all the necessary fields in your inquiries.</h4>
+                <form class="form-grid"><!--Start Form-->
+                    
+                    <fieldset class="inquiry">
+                        <legend>Customer Information</legend>
+                        <label for="fName">Name:
+                        <input type="text" id="fName" name="fName" placeholder="First Name" required>
+                            &nbsp;
+                        <input type="text" id="lName" name="lName" placeholder="Last Name" required>
+                        </label>
+                        
+                        <label id="gender">Gender:</label>
+                        <label for="male"><input type="radio" name="gender" id="male" value="Male">Male</label>
+                        <label for="female"><input type="radio" name="gender" id="female" value="Female">Female</label>
+                        <label for="other"><input type="radio" name="gender" id="other" value="Other">Other</label>
+                        
+                        <label for="email">Email:
+                        <input type="email" id="email" name="email" required></label>
+                        
+                        <label for="phone">Phone:
+                        <input type="tel" id="phone" name="phone" required></label>
+                    </fieldset>
+                    
+                    <fieldset id="inquiry">
+                        <legend>Customer Service Transaction Type</legend>
+                        <label for="transaction">Please select the transaction type for your inquiries.
+                            <br>
+                            <select name="transaction" id="trasaction">
+                                <option value="product inquiry">Product Inquiry</option>
+                                <option value="help service">Support Service</option>
+                                <option value="customer service">Customer Service</option>
+                                <option value="delivery inquiry">Delivery Inquiry</option>
+                                <option value="billing inquiry">Billing Inquiry</option>
+                                <option value="returns and refunds">Returns and Refunds</option> 
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+                        
+                        <label for="message">Message
+                        <textarea id="message" name="message" rows="5" cols="100" placeholder="Type your message here."></textarea></label>
+                    </fieldset>
+                    <fieldset id="feedback" class="mobile-feedback">
+                        <h5>To enhance the quality of our service, we value and appreciate your feedback. Please share your thoughts with us; we are eager to hear from you.</h5>
+                        <legend>Feedback (Optional)</legend>
+                        <p></p>
+                        <table>
+                            <caption>Please provide your feedback by rating each statement on a scale of 1 to 5, where 1 indicates 'Very Unsatisfied' and 5 indicates 'Very Satisfied.' Your honest responses help us understand your perspective better. Thank you for taking the time to share your thoughts.</caption>
+                            <tr>
+                                <th colspan="5">On a scale of 1 to 5, how would you rate your overall experience with our storage shed purchase process? </th>
+                            </tr>
+                            <tr>
+                                <td>Very Unsatisfied</td>
+                                <td>Unsatisfied</td>
+                                <td>Neutral</td>
+                                <td>Satisfied</td>
+                                <td>Very Satisfied</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="question_1" value="1"></td>
+                                <td><input type="radio" name="question_1" value="2"></td>
+                                <td><input type="radio" name="question_1" value="3"></td>
+                                <td><input type="radio" name="question_1" value="4"></td>
+                                <td><input type="radio" name="question_1" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">How would you rate the overall quality and durability of your purchased storage shed?</th>
+                            </tr>
+                            <tr>
+                                <td>Very Unsatisfied</td>
+                                <td>Unsatisfied</td>
+                                <td>Neutral</td>
+                                <td>Satisfied</td>
+                                <td>Very Satisfied</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="question_2" value="1"></td>
+                                <td><input type="radio" name="question_2" value="2"></td>
+                                <td><input type="radio" name="question_2" value="3"></td>
+                                <td><input type="radio" name="question_2" value="4"></td>
+                                <td><input type="radio" name="question_2" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">Did you interact with our customer service team during your purchase or afterward? If yes, how would you rate the assistance provided?</th>
+                            </tr>
+                            <tr>
+                                <td>Very Unsatisfied</td>
+                                <td>Unsatisfied</td>
+                                <td>Neutral</td>
+                                <td>Satisfied</td>
+                                <td>Very Satisfied</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="question_3" value="1"></td>
+                                <td><input type="radio" name="question_3" value="2"></td>
+                                <td><input type="radio" name="question_3" value="3"></td>
+                                <td><input type="radio" name="question_3" value="4"></td>
+                                <td><input type="radio" name="question_3" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">How satisfied were you with the delivery process and the condition of the storage shed upon arrival?</th>
+                            </tr>
+                            <tr>
+                                <td>Very Unsatisfied</td>
+                                <td>Unsatisfied</td>
+                                <td>Neutral</td>
+                                <td>Satisfied</td>
+                                <td>Very Satisfied</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="question_4" value="1"></td>
+                                <td><input type="radio" name="question_4" value="2"></td>
+                                <td><input type="radio" name="question_4" value="3"></td>
+                                <td><input type="radio" name="question_4" value="4"></td>
+                                <td><input type="radio" name="question_4" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">How was your experience navigating our website or visiting our physical store in relation to your storage shed purchase?</th>
+                            </tr>
+                            <tr>
+                                <td>Very Unsatisfied</td>
+                                <td>Unsatisfied</td>
+                                <td>Neutral</td>
+                                <td>Satisfied</td>
+                                <td>Very Satisfied</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="question_5" value="1"></td>
+                                <td><input type="radio" name="question_5" value="2"></td>
+                                <td><input type="radio" name="question_5" value="3"></td>
+                                <td><input type="radio" name="question_5" value="4"></td>
+                                <td><input type="radio" name="question_5" value="5"></td>
+                            </tr>
+                        </table>
+                        <label id="date-purchase">Date of Purchase
+                        </label><input type="date" name="purchase_date">
+                        <label for="brands">Select the brands you've previously purchased.</label>
+                        <label for="lifetime"><input type="checkbox" name="brands" id="lifetime" value="Lifetime">Lifetime</label>
+                        <label for="keter"><input type="checkbox" name="brands" id="keter" value="Keter">Keter</label>
+                        <label for="craftsman"><input type="checkbox" name="brands" id="craftsman" value="Craftsman">Craftsman</label>
+                        <label for="arrow"><input type="checkbox" name="brands" id="arrow" value="Arrow">Arrow</label>
+                        <label for="spacemaker"><input type="checkbox" name="brands" id="spacemaker" value="Spacemaker">Spacemaker</label>
+                    </fieldset>
+                    
+                    <fieldset id="feedback" class="desktop-feedback">
+                        <h5>To enhance the quality of our service, we value and appreciate your feedback. Please share your thoughts with us; we are eager to hear from you.</h5>
+                        <legend>Feedback (Optional)</legend>
+                        <p></p>
+                        <table>
+                            <caption>Please provide your feedback by rating each statement on a scale of 1 to 5, where 1 indicates 'Very Unsatisfied' and 5 indicates 'Very Satisfied.' Your honest responses help us understand your perspective better. Thank you for taking the time to share your thoughts.</caption>
+                            <tr>
+                                <th>Question</th>
+                                <td>Very Unsatisfied</td>
+                                <td>Unsatisfied</td>
+                                <td>Neutral</td>
+                                <td>Satisfied</td>
+                                <td>Very Satisfied</td>
+                            </tr>
+                            <tr>
+                                <th>On a scale of 1 to 5, how would you rate your overall experience with our storage shed purchase process? </th>
+                                <td><input type="radio" name="question_1" value="1"></td>
+                                <td><input type="radio" name="question_1" value="2"></td>
+                                <td><input type="radio" name="question_1" value="3"></td>
+                                <td><input type="radio" name="question_1" value="4"></td>
+                                <td><input type="radio" name="question_1" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>How would you rate the overall quality and durability of your purchased storage shed?</th>
+                                <td><input type="radio" name="question_2" value="1"></td>
+                                <td><input type="radio" name="question_2" value="2"></td>
+                                <td><input type="radio" name="question_2" value="3"></td>
+                                <td><input type="radio" name="question_2" value="4"></td>
+                                <td><input type="radio" name="question_2" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>Did you interact with our customer service team during your purchase or afterward? If yes, how would you rate the assistance provided?</th>
+                                <td><input type="radio" name="question_3" value="1"></td>
+                                <td><input type="radio" name="question_3" value="2"></td>
+                                <td><input type="radio" name="question_3" value="3"></td>
+                                <td><input type="radio" name="question_3" value="4"></td>
+                                <td><input type="radio" name="question_3" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>How satisfied were you with the delivery process and the condition of the storage shed upon arrival?</th>
+                                <td><input type="radio" name="question_4" value="1"></td>
+                                <td><input type="radio" name="question_4" value="2"></td>
+                                <td><input type="radio" name="question_4" value="3"></td>
+                                <td><input type="radio" name="question_4" value="4"></td>
+                                <td><input type="radio" name="question_4" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>How was your experience navigating our website or visiting our physical store in relation to your storage shed purchase?</th>
+                                <td><input type="radio" name="question_5" value="1"></td>
+                                <td><input type="radio" name="question_5" value="2"></td>
+                                <td><input type="radio" name="question_5" value="3"></td>
+                                <td><input type="radio" name="question_5" value="4"></td>
+                                <td><input type="radio" name="question_5" value="5"></td>
+                            </tr>
+                        </table>
+                        <label id="date-purchase">Date of Purchase
+                        </label><input type="date" name="purchase_date">
+                        <label for="brands">Select the brands you've previously purchased.</label>
+                        <label for="lifetime"><input type="checkbox" name="brands" id="lifetime" value="Lifetime">Lifetime</label>
+                        <label for="keter"><input type="checkbox" name="brands" id="keter" value="Keter">Keter</label>
+                        <label for="craftsman"><input type="checkbox" name="brands" id="craftsman" value="Craftsman">Craftsman</label>
+                        <label for="arrow"><input type="checkbox" name="brands" id="arrow" value="Arrow">Arrow</label>
+                        <label for="spacemaker"><input type="checkbox" name="brands" id="spacemaker" value="Spacemaker">Spacemaker</label>
+                    </fieldset>
+                    <input type="reset" id="reset" value="Clear All" class="btn">
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                </form>
+            </div>
 			
 		</main>
-		
 		
 		<footer>
 			<p>&#169; Copyright 2021. All Right Reserved.</p>
